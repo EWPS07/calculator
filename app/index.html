@@ -1,0 +1,80 @@
+
+<html>
+  <head>
+    <title>Calculator Widget</title>
+    <meta name="viewport" content="width=device-width"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Allan" rel="stylesheet" type="text/css"/>
+    <link href="calculator.css" type='text/css' rel='stylesheet'/>
+  </head>
+  <body>
+    <div id="calcShell" class="container-fluid">
+      <div class="row-fluid">
+        <p id="banner" class="text-center block">Calculator</p>
+      </div>
+      <div class="row-fluid">
+        <div class="col-xs-12">
+          <div class="container-fluid">
+            <div class="row-fluid">
+              <div id="outputWell" class="col-xs-12 well">
+                <div id="forOp">
+                  <div class="container-fluid">
+                    <div class="row-fluid"><span id="history" class="col-xs-12 output"></span></div>
+                    <div class="row-fluid"><span id="problem" class="col-xs-12 output"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row-fluid text-center">
+              <div id="timesBtn" class="btn btn-default col-xs-3 control operators notEq">&times;</div>
+              <div id="divideBtn" class="btn btn-default col-xs-3 control operators notEq">&divide;</div>
+              <div id="backBtn" class="btn btn-default col-xs-3 control caution">&larr;</div>
+              <div id="clearBtn" class="btn btn-default col-xs-3 control caution">CE</div>
+            </div>
+            <div class="row-fluid text-center">
+              <div id="plusBtn" class="btn btn-default col-xs-3 control operators notEq">&plus;</div>
+              <div id="minusBtn" class="btn btn-default col-xs-3 control operators notEq">&minus;</div>
+              <div id="equalsBtn" class="btn btn-default col-xs-3 control operators">&equals;</div>
+              <div id="sqrRootBtn" class="btn btn-default col-xs-3 control advanced notEq">&radic;</div>
+            </div>
+            <div class="row-fluid text-center">
+              <div id="oneBtn" class="btn btn-default col-xs-3 control int notEq">1</div>
+              <div id="twoBtn" class="btn btn-default col-xs-3 control int notEq">2</div>
+              <div id="threeBtn" class="btn btn-default col-xs-3 control int notEq">3</div>
+              <div id="numSquaredBtn" class="btn btn-default col-xs-3 control advanced notEq">X &sup2;</div>
+            </div>
+            <div class="row-fluid text-center">
+              <div id="fourBtn" class="btn btn-default col-xs-3 control int notEq">4</div>
+              <div id="fiveBtn" class="btn btn-default col-xs-3 control int notEq">5</div>
+              <div id="sixBtn" class="btn btn-default col-xs-3 control int notEq">6</div>
+              <div id="powerBtn" class="btn btn-default col-xs-3 control advanced"> Y <sup>x</sup></div>
+            </div>
+            <div class="row-fluid text-center">
+              <div id="sevenBtn" class="btn btn-default col-xs-3 control int notEq">7</div>
+              <div id="eightBtn" class="btn btn-default col-xs-3 control int notEq">8</div>
+              <div id="nineBtn" class="btn btn-default col-xs-3 control int notEq">9</div>
+              <div id="factorialBtn" class="btn btn-default col-xs-3 control advanced notEq">X !</div>
+            </div>
+            <div class="row-fluid text-center">
+              <div id="decimalBtn" class="btn btn-default col-xs-3 control parenDec notEq">.</div>
+              <div id="zeroBtn" class="btn btn-default col-xs-3 control int notEq">0</div>
+              <div id="parenthesisBtn" class="btn btn-default col-xs-3 control parenDec notEq">( )</div>
+              <div id="piBtn" class="btn btn-default col-xs-3 control advanced notEq">&pi;</div>
+            </div>
+            <div id="signature" class="row-fluid text-center block">
+              <p>A useful tool by Evan Paige</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src='calculator.js'></script>
+  </body>
+</html>

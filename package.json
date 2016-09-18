@@ -1,0 +1,16 @@
+{
+  "name": "calculator",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "description": "A calculator made with javascript",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "jquery": "^3.1.0",
+    "nodemon": "^1.10.2"
+  }
+}

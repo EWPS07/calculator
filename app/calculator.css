@@ -1,0 +1,387 @@
+/* ----------------- HTML ----------------- */
+
+html {
+  margin-top: 5%;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+p,
+#banner {
+  font-family: Monoton, cursive;
+  color: white;
+}
+
+
+/* -------------- Custom ID's-------------- */
+
+#calcShell {
+  background-color: #393939;
+  border: solid, 8%, #393939;
+  border-radius: 4%;
+  padding: 0%;
+}
+
+#history,
+#problem {
+  font-family: VT323, cursive;
+  font-weight: bolder;
+  color: black;
+  text-align: right;
+}
+
+#outputWell {
+  border: solid, 8px, white;
+  border-radius: 4px;
+  background-color: white;
+  padding: 0%;
+}
+
+#signature {
+  margin-top: 10%;
+}
+
+#banner {
+  font-size: 200%;
+}
+
+
+/* ------------ Custom Classes ------------ */
+
+.control {
+  font-size: 150%;
+  font-weight: bolder;
+  border: solid black 1px;
+  padding: 2%;
+}
+
+.output:empty::after {
+  content: ".";
+  visibility: hidden;
+}
+
+.caution,
+.advanced,
+.int {
+  font-family: 'Allan';
+  font-weight: bolder;
+}
+
+.caution {
+  /*   background-color: #ec1f1f; */
+  color: #ec1f1f;
+  text-shadow: .5px .5px .5px black;
+}
+
+.caution:hover {
+  background-color: #ee818d;
+}
+
+.advanced {
+  color: black;
+  text-shadow: .5px .5px .5px #76dee7;
+}
+
+.advanced:hover {
+  background-color: #9bc2e9;
+}
+
+.operators {
+  color: black;
+  text-shadow: .5px .5px .5px #4ce16b;
+}
+
+.operators:hover {
+  background-color: #b9e8b5;
+}
+
+.int {
+  color: black;
+  text-shadow: .5px .5px .5px #949f9f;
+}
+
+.int:hover {
+  background-color: white;
+}
+
+.parenDec {
+  color: black;
+  text-shadow: .5px .5px .5px #76dee7;
+}
+
+.parenDec:hover {
+  background-color: #8fa8c1;
+}
+
+
+/*--------- Bootstrap Classes ---------- */
+
+.btn {
+  border: double black 10%;
+  border-radius: 2%;
+  background-color: #ccc;
+}
+
+
+/*------------ Media querey -------------*/
+
+@media all and (min-width: 1460px) {
+  html {
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  #calcShell {
+    font-size: 225%;
+    margin: 10%;
+    margin-top: 0%;
+  }
+  #history,
+  #problem,
+  #solution {
+    font-size: 250%;
+  }
+}
+
+@media all and (max-width: 1459px) and (min-width: 1359px) {
+  html {
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  #calcShell {
+    font-size: 224%;
+    margin: 5.6%;
+    margin-top: 0%;
+  }
+  #history,
+  #problem,
+  #solution {
+    font-size: 250%;
+  }
+}
+
+@media all and (max-width: 1359px) and (min-width: 1259px) {
+  html {
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  #calcShell {
+    font-size: 223%;
+    margin: 4.8%;
+    margin-top: 0%;
+  }
+  #history,
+  #problem,
+  #solution {
+    font-size: 250%;
+  }
+}
+
+@media all and (max-width: 1259px) and (min-width: 1159px) {
+  html {
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  #calcShell {
+    font-size: 207%;
+    margin: 4%;
+    margin-top: 0%;
+  }
+  #history,
+  #problem,
+  #solution {
+    font-size: 250%;
+  }
+}
+
+@media all and (max-width: 1159px) and (min-width: 1059px) {
+  html {
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  #calcShell {
+    font-size: 191%;
+    margin: 3.2%;
+    margin-top: 0%;
+  }
+  #history,
+  #problem,
+  #solution {
+    font-size: 250%;
+  }
+}
+
+@media all and (max-width: 1059px) and (min-width: 959px) {
+  html {
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  #calcShell {
+    font-size: 175%;
+    margin: 2.4%;
+    margin-top: 0%;
+  }
+  #history,
+  #problem,
+  #solution {
+    font-size: 250%;
+  }
+}
+
+@media all and (max-width: 959px) and (min-width: 859px) {
+  html {
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  #calcShell {
+    font-size: 159%;
+    margin: 1.6%;
+    margin-top: 0%;
+  }
+  #history,
+  #problem,
+  #solution {
+    font-size: 250%;
+  }
+}
+
+@media all and (max-width: 859px) and (min-width: 759px) {
+  html {
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  #calcShell {
+    font-size: 143%;
+    margin: .8%;
+    margin-top: 0%;
+  }
+  #history,
+  #problem,
+  #solution {
+    font-size: 250%;
+  }
+}
+
+@media all and (max-width: 759px) and (min-width: 659px) {
+  html {
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  #calcShell {
+    font-size: 127%;
+  }
+  #history,
+  #problem,
+  #solution {
+    font-size: 250%;
+  }
+}
+
+@media all and (max-width: 659px) and (min-width: 559px) {
+  html {
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  #calcShell {
+    font-size: 111%;
+  }
+  #history,
+  #problem,
+  #solution {
+    font-size: 250%;
+  }
+}
+
+@media all and (max-width: 559px) and (min-width: 459px) {
+  html {
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  #calcShell {
+    font-size: 95%;
+    margin: 0%;
+  }
+  #history,
+  #problem,
+  #solution {
+    font-size: 250%;
+  }
+}
+
+@media all and (max-width: 459px) and (min-width: 359px) {
+  html {
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  #calcShell {
+    font-size: 79%;
+    margin: 0%;
+  }
+  #history,
+  #problem,
+  #solution {
+    font-size: 250%;
+  }
+}
+
+@media all and (max-width: 359px) and (min-width:259px) {
+  html {
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  #calcShell {
+    font-size: 63%;
+    margin: 0%;
+  }
+  #history,
+  #problem,
+  #solution {
+    font-size: 250%;
+  }
+}
+
+@media all and (max-width: 259px) and (min-width: 159px) {
+  html {
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  #calcShell {
+    font-size: 47%;
+    margin: 0%;
+  }
+  #history,
+  #problem,
+  #solution {
+    font-size: 250%;
+  }
+}
+
+@media all and (max-width: 159px) {
+  html {
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  #calcShell {
+    font-size: 31%;
+    margin: 0%;
+  }
+  #history,
+  #problem,
+  #solution {
+    font-size: 250%;
+  }
+}
